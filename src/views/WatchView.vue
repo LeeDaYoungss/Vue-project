@@ -8,7 +8,9 @@ const loading = ref(false)
 // watch는 ref에 직접 작동합니다
 watch(question, async (newQuestion, oldQuestion) => {
   console.log(newQuestion);
+  answer.value = '생각 중...'
 
+  
   if (newQuestion.includes('?')) {
     loading.value = true
     answer.value = '생각 중...'

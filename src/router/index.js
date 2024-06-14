@@ -64,6 +64,11 @@ const router = createRouter({
       name: 'watch',
       component: () => import('../views/WatchView.vue')
     },
+    {
+      path: '/comp_basic',
+      name: 'comp_basic',
+      component: () => import('../views/CBView.vue')
+    },
   ]
 })
 
