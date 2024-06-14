@@ -65,6 +65,11 @@ const router = createRouter({
       component: () => import('../views/WatchView.vue')
     },
     {
+      path: '/temp_ref',
+      name: 'temp_ref',
+      component: () => import('../views/TempRefView.vue')
+    },
+    {
       path: '/comp_basic',
       name: 'comp_basic',
       component: () => import('../views/CBView.vue')
